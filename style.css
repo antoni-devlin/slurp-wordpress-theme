@@ -5,7 +5,7 @@
 */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville');
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville'); */
 
 /* Header and footer styles */
 header {
@@ -102,6 +102,7 @@ article[class*="recipe-card"] {
 
 article[class*="recipe-card"]:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 article[class*="recipe-card"] img {
@@ -195,7 +196,7 @@ body {
 }
 
 .method p::before {
-  /* Decrement "my-sec-counter" by 1 */
+  /* Increment "my-sec-counter" by 1 */
   counter-increment: my-p-counter;
   content: counter(my-p-counter) ". ";
   font-weight: bold;

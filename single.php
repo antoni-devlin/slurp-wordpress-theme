@@ -10,9 +10,13 @@ while (have_posts()) {
             <img src="<?php the_post_thumbnail_url(); ?>" alt="">
             <h2>Ingredients</h2>
             <ul class="ingredients" data-columns="2">
-                <li>Ingredient 1</li>
-                <li>Ingredient 2</li>
-                <li>Ingredient 3</li>
+                <?php
+                  $ingredients_string = rtrim(get_field('ingredients'), ',');
+                  $ingredients = explode(",",$ingredients_string);
+                  if( count( $ingredients) > 0) {
+                    echo '<li>' . implode( '</li><li>', $ingredients) . '</li>';
+                }
+                ?>
             </ul>
             <div class="method">
                 <h2>Method</h2>
