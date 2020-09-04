@@ -5,7 +5,7 @@
 */
 
 /* Fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville'); */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville');
 
 /* Header and footer styles */
 header {
@@ -159,7 +159,8 @@ ul.ingredients {
 ul.ingredients li {
     font-size: 15px;
     font-family: sans-serif;
-    padding: 20px 0;
+    padding: 0.25rem;
+    
 }
 
 .wrapper h2, .method h2 {
@@ -200,4 +201,10 @@ body {
   counter-increment: my-p-counter;
   content: counter(my-p-counter) ". ";
   font-weight: bold;
+}
+
+.not-found-message {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1px;
+    margin: 0 auto;
 }
