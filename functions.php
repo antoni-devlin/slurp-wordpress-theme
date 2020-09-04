@@ -1,10 +1,10 @@
 <?php
 
-  function theme_styles() {
-    wp_enqueue_style('theme_main_styles', get_stylesheet_uri());
+  function slurp_styles() {
+    wp_enqueue_style('slurp_stylesheet', get_stylesheet_uri());
   }
 
-  add_action('wp_enqueue_scripts', 'theme_styles');
+add_action('wp_enqueue_scripts', 'slurp_styles');
 
   function theme_scripts() {
     wp_enqueue_script( 'menu-js', '/wp-content/themes/slurp-theme/js/menu.js', false );
