@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main class="main-content">
+  <h1>PIPELINE TEST</h1>
   <div class="grid-wrapper">
     <?php
     while (have_posts()) {
