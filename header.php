@@ -9,8 +9,8 @@
 </head>
 
 <body>
-<nav class="nav-side">
+    <nav class="nav-side">
         <a href="javascript:void(0)" onclick="toggleNav()" class="nav-toggle"></a>
         <h3> <a href="/"> <?php bloginfo() ?> </a> </h3>
-        <?php wp_nav_menu( array( 'sidebar-nav' => 'sidebar-nav', 'container' => 'ul', 'menu_class' => 'categories' ) );  ?>
+        <?php wp_nav_menu(array('sidebar-nav' => 'sidebar-nav', 'container' => 'ul', 'menu_class' => 'categories'));  ?>
     </nav>

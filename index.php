@@ -14,6 +14,7 @@
       </article>
     <?php }
     get_footer(); ?>
+
   </div>
 </main>
 </body>
