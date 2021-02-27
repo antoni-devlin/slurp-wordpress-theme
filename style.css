@@ -115,10 +115,12 @@ article[class*="recipe-card"] img {
 }
 
 /* article[class*="recipe-card"] img:hover {} */
+h1, h2 {
+    font-family: Georgia, serif;
+}
 
 article[class*="recipe-card"] h1 {
-    font-family: 'Libre Baskerville', serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin: 0;
 }
 
@@ -145,7 +147,6 @@ article[class*="recipe-card"] time {
 }
 
 .wrapper h1, h2 {
-    font-family: 'Libre Baskerville', serif;
     letter-spacing: 1px;
     z-index: -1;
     /* margin: 0; */
