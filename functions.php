@@ -9,7 +9,7 @@ add_action('wp_enqueue_scripts', 'slurp_styles');
 
 function theme_scripts()
 {
-  wp_enqueue_script('menu-js', '/wp-content/themes/slurp-theme/js/menu.js', false);
+  wp_enqueue_script('menu-js', '/wp-content/themes/slurp-wordpress-theme/js/menu.js', false);
 }
 
 function register_theme_menus()
