@@ -1,20 +1,22 @@
 <?php get_header();
 
 while (have_posts()) {
-  the_post(); ?>
+    the_post(); ?>
     <main class="main-content">
         <header>
         </header>
         <div class="wrapper">
             <h1 class="recipe-name"><?php the_title();  ?></h1>
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+            <div class="image-container">
+                <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+            </div>
             <h2>Ingredients</h2>
             <ul class="ingredients" data-columns="2">
                 <?php
-                  $ingredients_string = rtrim(get_field('ingredients'), ',');
-                  $ingredients = explode(",",$ingredients_string);
-                  if( count( $ingredients) > 0) {
-                    echo '<li>' . implode( '</li><li>', $ingredients) . '</li>';
+                $ingredients_string = rtrim(get_field('ingredients'), ',');
+                $ingredients = explode(",", $ingredients_string);
+                if (count($ingredients) > 0) {
+                    echo '<li>' . implode('</li><li>', $ingredients) . '</li>';
                 }
                 ?>
             </ul>
@@ -24,6 +26,6 @@ while (have_posts()) {
             </div>
         </div>
     </main>
-<?php }; 
+<?php };
 
 get_footer();  ?>
