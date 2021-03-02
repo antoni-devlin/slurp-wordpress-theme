@@ -86,17 +86,25 @@ ul.categories {
 
 /* Homepage styles */
 
-.grid-wrapper {
+/* .grid-wrapper {
+    background-color: red;;
     margin: auto;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
     padding: 2rem;
+} */
+
+div[class*="cat-"] {
+    display: flex;
+}
+
+.category-heading {
+    min-width: 300px;
 }
 
 article[class*="recipe-card"] {
     transition: all 0.1s;
-    max-width: 100%;
     margin: 0 auto;
 }
 
