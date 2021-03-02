@@ -97,6 +97,7 @@ ul.categories {
 
 div[class*="cat-"] {
     display: flex;
+    margin: 2% 0 2% 0;
 }
 
 .category-heading {
@@ -106,6 +107,7 @@ div[class*="cat-"] {
 article[class*="recipe-card"] {
     transition: all 0.1s;
     margin: 0 auto;
+    padding: 10px;
 }
 
 article[class*="recipe-card"]:hover {

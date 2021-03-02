@@ -18,7 +18,7 @@
       while ($recently_added->have_posts()) :
         $recently_added->the_post(); ?>
 
-        <article onclick="location.href='<?php the_permalink(); ?>'" class="recipe-card">
+        <article onclick=" location.href='<?php the_permalink(); ?>'" class=" recipe-card">
           <?php if (has_post_thumbnail()) { ?>
             <img src="<?php the_post_thumbnail_url(); ?>" alt="">
           <?php } else { ?>
@@ -44,6 +44,16 @@
     if ($mains_posts->have_posts()) : ?>
       <span class="category-heading">
         <h1>Mains</h1>
+        <?php
+        // Get the ID of a given category
+        $category_id = get_cat_ID('mains');
+
+        // Get the URL of this category
+        $category_link = get_category_link($category_id);
+        ?>
+
+        <!-- Print a link to this category -->
+        <a href="<?php echo esc_url($category_link); ?>"><?php get_the_category() ?>See all</a>
       </span>
       <?php
       while ($mains_posts->have_posts()) :
