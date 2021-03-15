@@ -22,7 +22,7 @@
           <?php if (has_post_thumbnail()) { ?>
             <img src="<?php the_post_thumbnail_url(); ?>" alt="">
           <?php } else { ?>
-            <img src="https://i.picsum.photos/id/826/400/500.jpg?hmac=q3ZCuylWRDrInYxbqomN4WmimItkCHU9m-P1ZvLHDkw">
+            <img src="https://via.placeholder.com/960x540">
           <?php } ?>
           <h1> <?php the_title(); ?> </h1>
         </article>
